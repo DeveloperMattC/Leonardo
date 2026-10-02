@@ -1,0 +1,14 @@
+---
+description: Never use an en dash or em dash in replies, code, or generated output
+alwaysApply: true
+---
+
+# Do not use an en dash in responses, code, or output
+
+Never use the en dash character (Unicode U+2013). Do not use an em dash (Unicode U+2014) either.
+
+Use a comma, colon, parenthesis, hyphen, or period instead.
+
+This applies to chat replies, source code, comments, UI copy, docs, filenames, and generated files.
+
+A normal hyphen in compound words (for example `built-in`) is fine. A minus sign in code is fine.

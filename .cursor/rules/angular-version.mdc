@@ -1,0 +1,13 @@
+---
+description: Stay on Angular 19 APIs and patterns for this project
+alwaysApply: true
+---
+
+# Follow the project Angular version
+
+Use this rule in Angular 19 projects (`@angular/core` `^19.2.0`, CLI `^19.2.17`).
+
+- Write code that is valid for Angular 19. Do not introduce APIs from a newer major, and do not regress to Angular 14 through 17 defaults.
+- Use Angular 19 patterns: standalone components, built-in template control flow (`@if`, `@for`, `@switch`), signals, `input()` / `output()` / `model()`, and current router and forms APIs.
+- Match existing `package.json` versions when adding Angular packages. Do not upgrade the framework unless asked.
+- When citing Angular docs or examples, use Angular 19 guidance, not NgModule-first samples.

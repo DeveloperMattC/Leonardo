@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+**/External Skills/
+*.env
+*.pem
+*.key
+.idea/
+.vscode/

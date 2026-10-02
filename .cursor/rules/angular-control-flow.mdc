@@ -1,0 +1,42 @@
+---
+description: Use Angular @if/@for/@switch instead of *ngIf, *ngFor, *ngSwitch
+globs: "**/*.{html,ts}"
+alwaysApply: false
+---
+
+# Prefer built-in control flow over `*ngIf`
+
+Do not use `*ngIf`, `*ngFor`, or `*ngSwitch`. Use Angular built-in control flow instead.
+
+```html
+<!-- Do not -->
+<section *ngIf="isReady">...</section>
+
+<!-- Do this -->
+@if (isReady) {
+  <section>...</section>
+} @else {
+  <p>Loading</p>
+}
+```
+
+```html
+@for (item of items; track item.id) {
+  <li>{{ item.name }}</li>
+} @empty {
+  <li>No items</li>
+}
+```
+
+```html
+@switch (status) {
+  @case ('ok') {
+    <p>Ready</p>
+  }
+  @default {
+    <p>Unknown</p>
+  }
+}
+```
+
+Do not import `NgIf`, `NgFor`, or `NgSwitch` into components for these cases.
